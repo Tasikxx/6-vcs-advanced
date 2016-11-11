@@ -1,0 +1,209 @@
++Task1
+		
++	cd
+		
++	cd Cursor/
+		
++	git clone https://github.com/tasikxx/vcs-advanced
+		
++	cd 6-vcs-advanced
+		
++	git init
+		
++	echo "creating README" >> README.md
+		
++	git status
+		
++	git add .
+		
++	git commit -m "adding readme"
+		
++	git push
+		
++	git branch architecture
+		
++	git checkout architecture
+		
++	mkdir assets
+		
++	mkdir uploads
+		
++	touch index.html
+		
++	git add .
+		
++	git commit -m "adding structure"
+		
++	cd assets
+		
++	touch all.js
+		
++	touch css.js
+		
++	cd ..
+		
++	git commit -m "assets update"
+		
++	touch .gitignore
+		
++	echo "/uploads/*" > .gitignore
+		
++	git add .
+		
++	git commit -m "git ignore"
+		
++	git push origin architecture
+		
++	git checkout master
+		
++	git merge architecture
+		
++	git branch --d architecture
+		
++	git push origin master
+		
++	git push origin --delete architecture
+		
++	------
+		
++	Task2
+		
++	git branch usable
+		
++	touch files.txt
+		
++	git status
+		
++	git add .
+		
++	git commit -m "add new file"
+		
++	touch newfile.txt
+		
++	git status
+		
++	git add .
+		
++	git commit -m "add newfile2"
+		
++	git checkout usable
+		
++	git rebase master
+		
++	touch branch.txt
+		
++	git status
+		
++	git add .
+		
++	git commit "new file"
+		
++	git checkout master
+		
++	git merge usable
+		
++	git branch --d usable
+		
++	git push origin master
+		
++	git push origin --delete usable
+		
++	------
+		
++	Task3
+		
++	touch mitka.txt
+		
++	git add .
+		
++	git commit -m"task3"
+		
++	touch tags.txt
+		
++	git add .
+		
++	git commit -m "new file"
+		
++	git tag -a v1.0 -m "test v1.0"
+		
++	git push origin master
+		
++	git push origin v1.0
+		
++	|LINK: https://github.com/Tasikxx/vcs-advanced/releases|
+		
++	------
+		
++	Task4
+		
++	git submodule add https://github.com/Tasikxx/hello-world-github
+		
++	git add .
+		
++	git status 
+		
++	git commit -m "first submoule"
+		
++	git push origin master
+		
++	------
+		
++	Task5
+		
++	git branch gh-pages
+		
++	git checkout gh-pages
+		
++	echo "hello world">index.html
+		
++	git add .
+		
++	git commit -m "index.html"
+		
++	| https://tasikxx.github.io/vcs-advanced/ | -OK
+		
++	Do some changes
+		
++	git add .
+		
++	git commit -m "index.html pravki"
+		
++	git push origin gh-pages
+		
++	------
+		
++	Task6
+		
++	echo "conflict">> file.txt
+		
++	git add .
+		
++	git commit -m "new file "
+		
++	git branch test
+		
++	git checkout test
+		
++	/*at editor change file.txt content*/
+		
++	git add .
+		
++	git commit -m "test"
+		
++	git checkout master
+		
++	git merge test
+		
++	CONFLICT (content): Merge conflict in file.txt
+		
++	git merge --abort 
+		
++	Fixing conflict
+		
++	git merge test
+		
++	git push origin master
+		
++	------
+		
++	Repo link https://github.com/Tasikxx/vcs-advanced
