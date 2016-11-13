@@ -96,7 +96,7 @@
 		
 +	git add .
 		
-+	git commit "new file"
++	git commit -m "new file"
 		
 +	git checkout master
 		
